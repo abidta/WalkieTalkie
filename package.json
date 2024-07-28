@@ -1,0 +1,24 @@
+{
+  "name": "walkietalkie",
+  "version": "1.0.0",
+  "description": "WalkieTalkie app with a unique frequency feature for user channels.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abidta/WalkieTalkie.git"
+  },
+  "keywords": [
+    "walkietalkie",
+    "webrtc",
+    "websocket",
+    "real-time"
+  ],
+  "author": "Sainul Abid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abidta/WalkieTalkie/issues"
+  },
+  "homepage": "https://github.com/abidta/WalkieTalkie#readme"
+}

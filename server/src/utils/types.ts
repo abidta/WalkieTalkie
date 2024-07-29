@@ -11,6 +11,6 @@ export interface SignupBody extends LoginBody {
 
 declare module 'fastify' {
   interface FastifyInstance {
-    io: Server<{ hello: string }>
+    io: Server<{ ping: (msg: string) => void }, { pong: (msg: string) => void }>
   }
 }

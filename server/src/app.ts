@@ -7,6 +7,7 @@ import Env from '@fastify/env'
 import connectDb from './plugin/db'
 import JWT from '@fastify/jwt'
 import Cookie from '@fastify/cookie'
+import fastifySocketIO from 'fastify-socket.io'
 
 export default async function (app: FastifyInstance) {
   await app.register(Env, {
@@ -38,4 +39,5 @@ export default async function (app: FastifyInstance) {
     rep.code(200).setCookie('abid', 'some', { maxAge: 222222 })
     return { message: 'Pong' }
   })
+  app.register(fastifySocketIO)
 }

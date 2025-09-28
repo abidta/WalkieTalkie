@@ -10,10 +10,10 @@ export const onLogin = async (
   const user = await User.findOne({ username: username })
 
   if (!user) {
-    return reply.badRequest('user deosnt exist')
+    return reply.badRequest(`user doesn't exist`)
   }
   if (!(await user.matchPassword(password))) {
-    reply.unauthorized('password deosnt match')
+    reply.unauthorized(`password doesn't match`)
   }
 
   const token = req.server.jwt.sign({ user: user._id })
